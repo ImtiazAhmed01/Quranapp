@@ -45,12 +45,12 @@ export default function HomePageClient() {
         <div className="space-y-1">
           {SURAHS.map(s => (
             <Link key={s.id} href={`/surah/${s.id}`} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#13151f] transition-colors group">
-              <div className="w-8 h-8 flex-shrink-0 rounded flex items-center justify-center text-xs font-bold bg-[#1e2130] text-gray-500 group-hover:bg-green-500/10 group-hover:text-green-400 transition-colors">{s.id}</div>
+              <div className="w-8 h-8 shrink-0 rounded flex items-center justify-center text-xs font-bold bg-[#1e2130] text-gray-500 group-hover:bg-green-500/10 group-hover:text-green-400 transition-colors">{s.id}</div>
               <div className="flex-1 min-w-0 flex items-center gap-3">
                 <span className="text-sm text-gray-300 group-hover:text-white transition-colors">{s.name}</span>
                 <span className="text-xs text-gray-600 hidden sm:block">• {s.englishName}</span>
               </div>
-              <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="flex items-center gap-3 shrink-0">
                 <span className="text-xs text-gray-600 hidden sm:block">{s.ayahCount} ayahs</span>
                 <span className="text-xs px-2 py-0.5 rounded bg-[#1e2130] text-gray-500 text-[10px]">{s.revelationType === "Meccan" ? "Makkah" : "Madinah"}</span>
                 <span className="text-lg text-gray-500" style={{ fontFamily: "'Amiri',serif" }}>{s.arabic}</span>
