@@ -117,7 +117,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                                 href={`/surah/${surah.id}`}
                                 className={`flex items-center px-4 py-3 hover:bg-[#1e2130] transition-colors border-b border-[#1e2130] group ${activeSurahId === String(surah.id) ? "bg-[#1e2130] border-l-2 border-l-green-500" : ""}`}
                             >
-                                <div className={`w-8 h-8 flex-shrink-0 rounded flex items-center justify-center text-xs font-bold mr-3 ${activeSurahId === String(surah.id) ? "bg-green-500 text-black" : "bg-[#2a2d3a] text-gray-400 group-hover:bg-green-500/20 group-hover:text-green-400"} transition-colors`}>
+                                <div className={`w-8 h-8 shrink-0 rounded flex items-center justify-center text-xs font-bold mr-3 ${activeSurahId === String(surah.id) ? "bg-green-500 text-black" : "bg-[#2a2d3a] text-gray-400 group-hover:bg-green-500/20 group-hover:text-green-400"} transition-colors`}>
                                     {surah.id}
                                 </div>
                                 <div className="flex-1 min-w-0">
